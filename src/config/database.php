@@ -3,8 +3,8 @@ class Database {
     // В Docker хост = имя сервиса из docker-compose.yml
     private $host = 'postgres';
     private $port = '5432';
-    private $db_name = 'questionnaire_db';
-    private $username = 'devops_user';
+    private $db_name = '${DB_NAME}';
+    private $username = '${DB_USER}';
     private $password = '${DB_PASSWORD}';  
     private $conn;
     
