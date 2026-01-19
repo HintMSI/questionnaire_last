@@ -1,6 +1,5 @@
 <?php
 class Database {
-    // В Docker хост = имя сервиса из docker-compose.yml
     private $host = 'postgres';
     private $port = '5432';
     private $db_name = '${DB_NAME}';
@@ -23,4 +22,5 @@ class Database {
         }
     }
 }
+
 ?>
